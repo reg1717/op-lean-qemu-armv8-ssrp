@@ -19,9 +19,11 @@ on:
   workflow_dispatch:
   schedule:
 #    - cron: 0 */18 * * *
-    - cron: 30 11 * * *
+    - cron: 30 3 * * *
 
 jobs:
+  start:
+    TZ: Asia/Shanghai
   check:
     runs-on: ubuntu-latest
 
